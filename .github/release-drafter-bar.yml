@@ -1,6 +1,12 @@
 _extends: release-drafter-experiments:.github/release-drafter.yml
+
+# These will be overridden by the release-publish.yml workflow and set to the new tag
 name-template: 'bar-draft'
 tag-template: 'bar-draft'
+
+# Used to calculate changes since last release, and also to create unique drafts for each subproject
 tag-prefix: bar-
+
+# Limit changes to PRs that modified files at these paths
 include-paths:
   - "src/bar/"
