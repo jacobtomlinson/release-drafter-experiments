@@ -1,5 +1,6 @@
 _extends: release-drafter-experiments:.github/release-drafter.yml
 name-template: 'foo-draft'
 tag-template: 'foo-draft'
+tag-prefix: foo-
 include-paths:
   - "src/foo/"
