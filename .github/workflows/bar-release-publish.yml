@@ -1,9 +1,9 @@
-name: Release Publisher
+name: Bar Release Publisher
 
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "bar-v*.*.*"
 
 permissions:
   contents: read

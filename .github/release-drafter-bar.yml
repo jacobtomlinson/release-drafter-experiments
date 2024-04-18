@@ -1,0 +1,5 @@
+_extends: release-drafter-experiments:.github/release-drafter.yml
+name-template: 'bar-draft'
+tag-template: 'bar-draft'
+include-paths:
+  - "src/bar/"
