@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-print("Hello bar")
+print("Hello bar bar")
