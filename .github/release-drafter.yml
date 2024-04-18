@@ -1,6 +1,6 @@
-# These will be overridden by the release-publish.yml workflow and set to the new tag
-name-template: 'Next Release'
-tag-template: 'next'
+# These will be overridden by the subprojects
+name-template: 'draft'
+tag-template: 'draft'
 
 categories:
   - title: '🚀 Features'
