@@ -16,8 +16,17 @@ jobs:
       pull-requests: read
     runs-on: ubuntu-latest
     steps:
-      - uses: release-drafter/release-drafter@v5
+      - name: '[foo] Draft release'
+        uses: release-drafter/release-drafter@v5
+        with:
+          disable-autolabeler: true
+          config-name: release-drafter-foo.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: '[bar] Draft release'
+        uses: release-drafter/release-drafter@v5
         with:
           disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          config-name: release-drafter-bar.yml
