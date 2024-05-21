@@ -16,6 +16,7 @@ jobs:
       pull-requests: read
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Check if release commit
         id: check_release_commit
         run: git describe --exact-match --tags $(git rev-parse HEAD)
