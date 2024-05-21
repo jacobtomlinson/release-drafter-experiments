@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required to get tag history
       - name: Check if release commit
         id: check_release_commit
         run: git describe --exact-match --tags $(git rev-parse HEAD)
