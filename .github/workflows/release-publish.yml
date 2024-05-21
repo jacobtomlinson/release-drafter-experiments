@@ -1,9 +1,9 @@
-name: Bar Release Publisher
+name: Release Publisher
 
 on:
   push:
     tags:
-      - "bar-v*.*.*"
+      - "v*.*.*"
 
 permissions:
   contents: read
@@ -25,6 +25,5 @@ jobs:
           version: ${{ env.RELEASE_VERSION }}
           disable-autolabeler: true
           publish: true
-          config-name: release-drafter-bar.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
